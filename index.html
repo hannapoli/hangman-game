@@ -19,6 +19,107 @@
 
     <p id="lives">Lives: 7</p>
 
+    <div class="drawing">
+      <svg height="250" width="250">
+        <g id="body">
+          <g id="head" class="hangman">
+            <circle
+              id="face"
+              cx="125"
+              cy="50"
+              r="12.5"
+              stroke="black"
+              stroke-width="2.5"
+              fill="white"
+            />
+            <g id="rEyes" class="hangman">
+              <circle cx="120.625" cy="50" r="2.5" />
+              <circle cx="129.375" cy="50" r="2.5" />
+            </g>
+            <g id="xEyes" class="hide"> 
+              <line x1="118.75" y1="48.75" x2="122.5" y2="52.5" />
+              <line x1="118.75" y1="52.5" x2="122.5" y2="48.75" />
+              <line x1="127.5" y1="48.75" x2="131.25" y2="52.5" />
+              <line x1="127.5" y1="52.5" x2="131.25" y2="48.75" />
+            </g>
+          </g>
+          <line class="hangman" x1="125" y1="62.5" x2="125" y2="93.75" />
+          <line
+            class="hangman limb"
+            id="armL"
+            x1="125"
+            y1="75"
+            x2="106.25"
+            y2="87.5"
+          />
+          <line
+            class="hangman limb"
+            id="armR"
+            x1="125"
+            y1="75"
+            x2="143.75"
+            y2="87.5"
+          />
+          <line
+            class="hangman limb"
+            id="legL"
+            x1="125"
+            y1="93.75"
+            x2="112.5"
+            y2="118.75"
+          />
+          <line
+            class="hangman limb"
+            id="legR"
+            x1="125"
+            y1="93.75"
+            x2="137.5"
+            y2="118.75"
+          />
+
+          <line
+            class="hide"
+            id="armL-m"
+            x1="125"
+            y1="75"
+            x2="110"
+            y2="120"
+          />
+          <line
+            class="hide"
+            id="armR-m"
+            x1="125"
+            y1="75"
+            x2="145"
+            y2="120"
+          />
+          <line
+            class="hide"
+            id="legL-m"
+            x1="125"
+            y1="93.75"
+            x2="120"
+            y2="150"
+          />
+          <line
+            class="hide"
+            id="legR-m"
+            x1="125"
+            y1="93.75"
+            x2="140"
+            y2="150"
+          />
+        </g>
+
+        <line id="base" x1="6.25" y1="186.25" x2="243.75" y2="186.25" />
+
+        <line id="pole" x1="62.5" y1="186.25" x2="62.5" y2="12.5" />
+        <line id="hPole" x1="62.5" y1="12.5" x2="125" y2="12.5" />
+        <line id="angle" x1="75" y1="12.5" x2="62" y2="37" />
+        <line id="rope" x1="125" y1="12.5" x2="125" y2="37.5" />
+      </svg>
+    </div>
+
     <div id="container-keyboard">
       <div>
         <button>Q</button>
