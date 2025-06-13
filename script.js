@@ -40,9 +40,9 @@ const keys = document.querySelectorAll("#container-keyboard button");
 const hangman = document.getElementsByClassName("hangman");
 const lostState = document.getElementsByClassName("hide");
 const alive = document.getElementsByClassName("limb");
-let face = document.getElementById("face");
+const face = document.getElementById("face");
 
-let lives = document.getElementById("lives");
+const lives = document.getElementById("lives");
 
 // =================== STATE OF THE GAME ================
 
